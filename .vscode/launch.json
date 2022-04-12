@@ -1,16 +1,17 @@
 {
-  // Use IntelliSense to learn about possible attributes.
-  // Hover to view descriptions of existing attributes.
-  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "type": "extendscript-debug",
-      "request": "launch",
-      "name": "Indesign",
-      "program": "${workspaceFolder}/compiled/index.js",
-      "stopOnEntry": false,
-      "internalConsoleOptions": "openOnSessionStart"
-    }
-  ]
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Indesign",
+            "type": "extendscript-debug",
+            "request": "launch",
+            "preLaunchTask": "tsc_build",
+            "program": "${workspaceFolder}/compiled/export.js",
+            "stopOnEntry": false,
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+    ]
 }

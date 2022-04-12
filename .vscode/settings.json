@@ -1,3 +1,6 @@
 {
-  "files.autoSave": "off"
+    "files.autoSave": "off",
+    "prettier.semi": false,
+    "prettier.tabWidth": 4,
+    "editor.tabSize": 4
 }
