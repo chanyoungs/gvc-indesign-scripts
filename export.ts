@@ -21,7 +21,7 @@ const progress = (steps: number) => {
     win.show()
 }
 
-var bulletins = ["Central-Kor", "Central-Eng", "Wimbledon-Eng"]
+var bulletins = ["Central-Kor", "Central-Eng", "Wimbledon-Kor"]
 progress(bulletins.length * (1 + 3))
 progress.message("Initialising...")
 
