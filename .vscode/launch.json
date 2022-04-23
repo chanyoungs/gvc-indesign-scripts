@@ -9,7 +9,7 @@
             "type": "extendscript-debug",
             "request": "launch",
             "preLaunchTask": "tsc_build",
-            "program": "${workspaceFolder}/compiled/export.js",
+            "program": "${workspaceFolder}/dist/Bulletins Scripts/Merge.js",
             "stopOnEntry": false,
             "internalConsoleOptions": "openOnSessionStart"
         }
