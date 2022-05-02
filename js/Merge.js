@@ -37,9 +37,10 @@ for (var b = 0; b < bulletins.length; b++) {
         docTemp.close(SaveOptions.NO);
         progress.increment();
     }
-    app.documents.itemByID(docIDs["template"]).close(SaveOptions.NO);
+    app.activeDocument = app.documents.itemByID(docIDs["template"]);
     progress.increment();
 }
+app.activeDocument.close(SaveOptions.NO);
 progress.message("Saving: \"".concat(date, ".indd\""));
 app.activeDocument.save(File("".concat(myPath, "/").concat(date, ".indd")));
 progress.increment();

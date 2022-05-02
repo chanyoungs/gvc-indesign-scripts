@@ -52,10 +52,11 @@ for (let b = 0; b < bulletins.length; b++) {
         progress.increment()
     }
 
-    app.documents.itemByID(docIDs["template"]).close(SaveOptions.NO)
+    app.activeDocument = app.documents.itemByID(docIDs["template"])
     progress.increment()
 }
 
+app.activeDocument.close(SaveOptions.NO)
 progress.message(`Saving: "${date}.indd"`)
 app.activeDocument.save(File(`${myPath}/${date}.indd`))
 progress.increment()
