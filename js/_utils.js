@@ -18,4 +18,9 @@ var progress = function (steps) {
     };
     win.show();
 };
-var bulletins = ["Central-Kor", "Central-Eng", "Wimbledon-Kor"];
+var bulletins = [
+    "Central-Kor",
+    "Central-Eng",
+    "Wimbledon-Kor",
+    "Wimbledon-Eng",
+];

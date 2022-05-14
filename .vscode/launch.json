@@ -5,11 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Indesign",
+            "name": "Merge",
             "type": "extendscript-debug",
             "request": "launch",
             "preLaunchTask": "tsc_build",
             "program": "${workspaceFolder}/js/Merge.js",
+            "stopOnEntry": false,
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "Export",
+            "type": "extendscript-debug",
+            "request": "launch",
+            "preLaunchTask": "tsc_build",
+            "program": "${workspaceFolder}/js/Export.js",
             "stopOnEntry": false,
             "internalConsoleOptions": "openOnSessionStart"
         }

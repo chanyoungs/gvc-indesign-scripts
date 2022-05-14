@@ -23,4 +23,9 @@ const progress: any = (steps: number) => {
     win.show()
 }
 
-const bulletins = ["Central-Kor", "Central-Eng", "Wimbledon-Kor"]
+const bulletins = [
+    "Central-Kor",
+    "Central-Eng",
+    "Wimbledon-Kor",
+    "Wimbledon-Eng",
+]
