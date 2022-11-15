@@ -1,4 +1,5 @@
 //@include "_utils.js"
+app.activeDocument.save(app.activeDocument.fullName);
 progress(bulletins.length * (1 + 3));
 progress.message("Initialising...");
 var getNameWithoutExtension = function (doc) {

@@ -1,5 +1,7 @@
 //@include "_utils.js"
 
+app.activeDocument.save(app.activeDocument.fullName)
+
 progress(bulletins.length * 2 + 1)
 progress.message("Initialising...")
 
