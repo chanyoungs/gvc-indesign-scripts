@@ -1,8 +1,9 @@
 const doc = app.activeDocument
+let progress: any
 if (doc.saved) {
     const myPath = doc.fullName.parent.fsName.toString().replace(/\\/g, "/")
 
-    const progress: any = (steps: number) => {
+    progress = (steps: number) => {
         const win = new (Window as any)("palette", "Progress", undefined, {
             closeButton: false,
         })
