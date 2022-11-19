@@ -1,7 +1,7 @@
 var doc = app.activeDocument;
 if (doc.saved) {
     var myPath = doc.fullName.parent.fsName.toString().replace(/\\/g, "/");
-    var progress_1 = function (steps) {
+    var progress = function (steps) {
         var win = new Window("palette", "Progress", undefined, {
             closeButton: false
         });
@@ -12,9 +12,9 @@ if (doc.saved) {
             progressBar = win.add("progressbar", undefined, 0, steps);
             progressBar.preferredSize = [450, -1]; // 450 pixels wide, default height.
         }
-        progress_1.close = function () { return win.close(); };
-        progress_1.increment = function () { return progressBar.value++; };
-        progress_1.message = function (message) {
+        progress.close = function () { return win.close(); };
+        progress.increment = function () { return progressBar.value++; };
+        progress.message = function (message) {
             text.text = message;
         };
         win.show();
