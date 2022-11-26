@@ -1,7 +1,8 @@
 var doc = app.activeDocument;
+var progress;
 if (doc.saved) {
     var myPath = doc.fullName.parent.fsName.toString().replace(/\\/g, "/");
-    var progress = function (steps) {
+    progress = function (steps) {
         var win = new Window("palette", "Progress", undefined, {
             closeButton: false
         });
